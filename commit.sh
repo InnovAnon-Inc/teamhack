@@ -13,9 +13,9 @@ for k in \
 do (
   cd "$k"
   git pull origin
-#  git add .
-#  git commit -m update
-#  git push
+  git add .
+  git commit -m update
+  git push
   ) || {
   echo $k ; exit 2
 }; done
