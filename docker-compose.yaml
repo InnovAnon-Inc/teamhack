@@ -4,7 +4,7 @@ include:
   - htb/docker-compose.yaml
   - it/docker-compose.yaml
   - net/docker-compose.yaml
-  - ops/docker-compose.yaml
+  #- ops/docker-compose.yaml
 services:
   test:
     image:          ubuntu
