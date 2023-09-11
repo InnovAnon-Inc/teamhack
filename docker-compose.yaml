@@ -1,0 +1,149 @@
+version: '3.8'
+include:
+  - dev/docker-compose.yaml
+  - net/docker-compose.yaml
+  - it/docker-compose.yaml
+services:
+  test:
+    image:          ubuntu
+    container_name: test
+    volumes:
+      - apt-cacher-ng:/mnt/apt-cacher-ng:rw
+      - bash-root:/mnt/bash-root:rw
+      #- dcc-afl:/mnt/dcc-afl:rw
+      #- dcc-debian:/mnt/dcc:rw
+      - ccache-etc:/mnt/ccache-etc:rw
+      - ccache-redis:/mnt/ccache-redis:rw
+      - dcc-kali:/mnt/dcc-kali:rw
+      - dcc-ubuntu:/mnt/dcc-ubuntu:rw
+      - dcc-voidlinux:/mnt/dcc-voidlinux:rw
+      #- dns-keys:/mnt/dns-keys:rw
+      #- dns-zones:/mnt/dns-zones:rw
+      #- ovpn1-conf:/mnt/ovpn1-conf:rw
+      #- ovpn2-conf:/mnt/ovpn2-conf:rw
+      - pgdata:/mnt/pgdata:rw
+      - redis-certs:/mnt/redis-certs:rw
+      #- redis-conf:/mnt/redis-conf:rw
+      - redis-data:/mnt/redis-data:rw
+      - ./mnt/test:/mnt/test:rw
+      - slapd-certs:/mnt/slapd-certs:rw
+      - slapd-root:/mnt/slapd-root:rw
+      #- syslog-client:/mnt/syslog-client:rw
+      - syslog-client:/etc/rsyslog.d:ro
+      - syslog-client:/mnt/syslog-client:rw
+      - syslog-etc:/mnt/syslog-etc:rw
+      - syslog-log:/mnt/syslog-log:rw
+      - tor-etc:/mnt/tor-etc
+      - vpn-c2-etc:/mnt/vpn-c2-etc:rw
+      - vpn-s-etc:/mnt/vpn-s1-etc:rw
+      - vpn-s-peer1:/mnt/vpn-s1-peer1:rw
+      #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
+    #depends_on:
+      #syslog:
+      #  condition:   service_healthy
+
+#  dcc-afl:
+#    build:
+#      context:       distcc
+#      dockerfile:    Dockerfile.afl
+#    container_name:  distcc-afl
+#    ports:
+#      - "0.0.0.0:3634:3634"
+#      - "0.0.0.0:3635:3635"
+#    volumes:
+#      - dcc-afl:/var/cache/ccache
+#      - syslog-client:/etc/rsyslog.d:ro
+#    restart:         always
+#    #network_mode:    service:vpn-s1
+#    healthcheck:
+#    #  test: ["CMD-SHELL", "wget -nv -O/dev/null http://0.0.0.0:3635/"]
+#      test: ["CMD-SHELL", "distcc --show-hosts && ccache -s"]
+#      interval:      1m
+#      timeout:       3s
+#      retries:       10
+#    depends_on:
+#      #acng:
+#      #  condition:   service_healthy
+#      redis:
+#         condition: service_started
+#      syslog:
+#        condition:   service_started
+
+  #afl:
+  #  build:           afl3
+  #  container_name:  afl
+  #  #depends_on:
+  #    #acng:
+  #    #  condition:   service_healthy
+  #    #dcc-afl:
+  #    #  condition:   service_healthy
+  #    #syslog:
+  #    #  condition:   service_healthy
+ 
+  # TODO dnscrypt
+
+  #dns:
+  #  image:     strm/dnsmasq
+  #  container_name: dns
+  #  ports:
+  #    - "0.0.0.0:53:53/udp"
+  #    #- "0.0.0.0:80:80"
+  #    #- "0.0.0.0:433:433"
+  #    #- "0.0.0.0:853:853"
+  #    #- "127.0.0.1:953:953"
+  #  #environment:
+  #  #  - TZ=America/Chicago
+  #  #  - BIND9_USER=bind
+  #  volumes:
+  #  #  - dns-etc:/etc/bind
+  #    - dns-etc:/etc/dnsmasq.d:ro
+  #  #  - dns-cache:/var/cache/bind
+  #  #  - dns-records:/var/lib/bind
+  #  #  - syslog-client:/etc/rsyslog.d:ro
+  #  cap_add:
+  #    - NET_ADMIN
+  #  restart:        always
+  #  depends_on:
+  #    syslog:
+  #      condition:  service_started
+  #  #network_mode: service:ovpn2
+  #  #healthcheck:
+  #  #command: "-4"
+
+  #dns:
+  #  image: jedisct1/dnscrypt-server:latest
+  #  container_name: dnscrypt
+  #  restart: always
+  #  #command: "init -N innovanon.com -E '192.168.1.76:5443'"
+  #  command: "start"
+  #  ports:
+  #      - '5443:5443/udp'
+  #      - '5443:5443/tcp'
+  #  volumes:
+  #    - dns-keys:/opt/encrypted-dns/etc/keys:rw
+  #    - dns-zones:/opt/unbound/etc/unbound/zones:ro
+  #  environment:
+  #  - TZ='UTC'
+    
+  # TODO irc
+  # TODO NFS
+  # TODO samba
+    
+      
+
+
+
+      
+#volumes:
+  #dns-cache:
+  #dns-etc:
+  #dns-keys:
+  #dns-records:
+  #dns-zones:
+  #ovpn1-conf:
+  #ovpn2-conf:
+
+#networks:
+#  mynetwork:
+#    external: true
+

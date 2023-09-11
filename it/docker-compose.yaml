@@ -1,0 +1,9 @@
+version: '3.8'
+include:
+  - pgldap/docker-compose.yaml
+  - pgrsyslog/docker-compose.yaml
+  - postgres/docker-compose.yaml
+
+volumes:
+  syslog-client:
+

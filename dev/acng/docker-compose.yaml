@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  acng:
+    image: sameersbn/apt-cacher-ng
+    container_name:  apt-cacher-ng
+    ports:
+      - "0.0.0.0:3142:3142"
+    volumes:
+      - apt-cacher-ng:/var/cache/apt-cacher-ng
+      - syslog-client:/etc/rsyslog.d:ro
+    restart:         always
+    #network_mode:    service:vpn-s1
+    healthcheck:
+      test: ["CMD-SHELL", "wget -nv -O/dev/null http://0.0.0.0:3142/acng-report.html"]
+      interval:      1m
+      timeout:       5s
+      retries:       10
+    depends_on:
+      syslog:
+        condition:   service_started
+
+volumes:
+  apt-cacher-ng:
+

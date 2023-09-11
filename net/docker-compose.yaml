@@ -1,0 +1,7 @@
+version: '3.8'
+include:
+  - tor/docker-compose.yaml
+  - vpn-c1/docker-compose.yaml
+  - vpn-c2/docker-compose.yaml
+  - vpn-s/docker-compose.yaml
+

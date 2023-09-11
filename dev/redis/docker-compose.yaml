@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  redis:
+    image:   bitnami/redis
+    container_name:  redis
+    ports:
+      - "0.0.0.0:6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_TLS_ENABLED=no
+      - REDIS_TLS_CERT_FILE=/opt/bitnami/redis/certs/redis.crt
+      - REDIS_TLS_KEY_FILE=/opt/bitnami/redis/certs/redis.key
+      - REDIS_TLS_CA_FILE=/opt/bitnami/redis/certs/redis.chain.crt
+    volumes:
+      - redis-certs:/opt/bitnami/redis/certs:ro
+      - redis-data:/opt/bitnami/redis/data
+      #- redis-conf:/opt/bitnami/redis/etc
+      - syslog-client:/etc/rsyslog.d:ro
+    restart:         always
+    #network_mode:    service:vpn-s1
+    depends_on:
+      syslog:
+        condition:   service_started
+
+volumes:
+  redis-certs:
+  #redis-conf:
+  redis-data:
+

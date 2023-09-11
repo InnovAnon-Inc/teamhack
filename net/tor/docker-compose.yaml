@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  tor:
+    image: osminogin/tor-simple
+    container_name:  tor
+    volumes:
+      - syslog-client:/etc/rsyslog.d:ro
+      - tor-etc:/etc/tor:ro
+    restart:         always
+    network_mode:    service:vpn-c1
+    # TODO healthcheck
+    depends_on:
+      vpn-c1:
+        #condition:   service_healthy
+        condition:   service_started
+      #syslog:
+      #  condition:   service_started
+     
+volumes:
+  tor-etc:
+

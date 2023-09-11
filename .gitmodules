@@ -1,0 +1,27 @@
+[submodule "ops/ppa"]
+	path = ops/ppa
+	url = https://github.com/InnovAnon-Inc/ppa.git
+[submodule "dev/bash-syslog"]
+	path = dev/bash-syslog
+	url = https://github.com/InnovAnon-Inc/bash-syslog.git
+[submodule "it/pgldap"]
+	path = it/pgldap
+	url = https://github.com/InnovAnon-Inc/pgldap.git
+[submodule "it/pgrsyslog"]
+	path = it/pgrsyslog
+	url = https://github.com/InnovAnon-Inc/pgrsyslog.git
+[submodule "dev/dcc/main"]
+	path = dev/dcc/main
+	url = https://github.com/InnovAnon-Inc/dcc.git
+[submodule "dev/dcc/kali"]
+	path = dev/dcc/kali
+	url = https://github.com/InnovAnon-Inc/dcc.git
+	branch = kali
+[submodule "dev/dcc/ubuntu"]
+	path = dev/dcc/ubuntu
+	url = https://github.com/InnovAnon-Inc/dcc.git
+	branch = ubuntu
+[submodule "dev/dcc/voidlinux"]
+	path = dev/dcc/voidlinux
+	url = https://github.com/InnovAnon-Inc/dcc.git
+	branch = voidlinux

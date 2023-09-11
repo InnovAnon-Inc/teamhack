@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  vpn-s:
+    env_file: .env
+    image: lscr.io/linuxserver/wireguard
+    container_name: vpn-s
+    volumes:
+      - syslog-client:/etcrsyslog.d:ro
+      - vpn-s-etc:/config:rw
+      - vpn-s-peer1:/config/peer1:rw
+      #- vpn-s1-mod:/modules:ro
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: always
+    # TODO
+    #network_mode: service:vpn-c2
+    #network_mode: service:vpn-c1
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    # TODO healthcheck
+    #depends_on:
+      #syslog:
+      #  condition: service_started
+      #vpn-c2:
+      #  condition: service_started
+
+volumes:
+  vpn-s-etc:
+  vpn-s-peer1:
+

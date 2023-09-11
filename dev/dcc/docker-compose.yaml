@@ -1,0 +1,12 @@
+version: '3.8'
+include:
+  #- afl/docker-compose.yaml
+  #- debian/docker-compose.yaml
+  - kali/docker-compose.yaml
+  - ubuntu/docker-compose.yaml
+  - voidlinux/docker-compose.yaml
+
+volumes:
+  ccache-etc:
+  ccache-redis:
+
