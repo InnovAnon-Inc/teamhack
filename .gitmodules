@@ -25,3 +25,15 @@
 	path = dev/dcc/voidlinux
 	url = https://github.com/InnovAnon-Inc/dcc.git
 	branch = voidlinux
+[submodule "htb/db"]
+	path = htb/db
+	url = https://github.com/InnovAnon-Inc/teamhack_db.git
+[submodule "htb/dns"]
+	path = htb/dns
+	url = https://github.com/InnovAnon-Inc/teamhack_dns.git
+[submodule "htb/rest"]
+	path = htb/rest
+	url = https://github.com/InnovAnon-Inc/teamhack_rest.git
+[submodule "htb/recond"]
+	path = htb/recond
+	url = https://github.com/InnovAnon-Inc/teamhack_recond.git
