@@ -4,4 +4,5 @@ include:
   - dns/docker-compose.yaml
   - nmap/docker-compose.yaml
   - recond/docker-compose.yaml
+  - rest/docker-compose.yaml
 
