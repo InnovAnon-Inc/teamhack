@@ -10,5 +10,11 @@ git branch    "$*"
 git checkout  "$*"
 git checkout  main
 git merge     "$*"
-git push
+git push origin main
 
+while [[ "$(basename "$(pwd)")" != teamhack ]]
+do cd ..
+done
+git add .
+git commit -m "$*"
+git push
