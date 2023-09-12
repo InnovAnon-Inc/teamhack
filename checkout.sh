@@ -17,4 +17,5 @@ do cd ..
 done
 git add .
 git commit -m "$*"
+git pull
 git push

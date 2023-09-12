@@ -35,6 +35,7 @@ services:
       - syslog-client:/mnt/syslog-client:rw
       - syslog-etc:/mnt/syslog-etc:rw
       - syslog-log:/mnt/syslog-log:rw
+      - teamhack-dns:/mnt/teamhack-dns:rw
       - tor-etc:/mnt/tor-etc
       - vpn-c2-etc:/mnt/vpn-c2-etc:rw
       - vpn-s-etc:/mnt/vpn-s1-etc:rw
