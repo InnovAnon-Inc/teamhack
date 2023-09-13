@@ -40,6 +40,7 @@ services:
       - vpn-c2-etc:/mnt/vpn-c2-etc:rw
       - vpn-s-etc:/mnt/vpn-s1-etc:rw
       - vpn-s-peer1:/mnt/vpn-s1-peer1:rw
+      - msfrpcd:/mnt/msfrpcd:rw
       #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
     #depends_on:
       #syslog:
