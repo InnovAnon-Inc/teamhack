@@ -9,6 +9,7 @@ fi
 find -mindepth 1 -maxdepth 5 -type d |
 while IFS= read -r k ; do
 [[ -d "$k.git" ]] || continue
+echo "$k"
 git -C "$k" add .
 git -C "$k" commit -m "$M"
 git -C "$k" push
