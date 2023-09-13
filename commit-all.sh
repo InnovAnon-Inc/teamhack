@@ -1,24 +1,18 @@
-for k in \
-./dev/bash-syslog   \
-./dev/dcc/voidlinux \
-./dev/dcc/ubuntu    \
-./dev/dcc/main      \
-./dev/dcc/kali      \
-./htb/db            \
-./htb/dns           \
-./htb/recond        \
-./htb/rest          \
-./it/pgrsyslog      \
-./it/pgldap
-do (
-  cd "$k"
-  git pull origin
-  git add .
-  git commit -m update
-  git push
-  ) || {
-  echo $k ; exit 2
-}; done
+#! /usr/bin/env bash
+set -euxo nounset
+(( $UID ))
+if (( ! $# )) ; then
+  M=update
+else M="$*"
+fi
+
+find -mindepth 1 -maxdepth 5 -type d |
+while IFS= read -r k ; do
+[[ -d "$k.git" ]] || continue
+git -C "$k" add .
+git -C "$k" commit -m "$M"
+git -C "$k" push
+done
 
 git pull
 git add .
