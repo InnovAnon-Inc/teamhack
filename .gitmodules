@@ -37,3 +37,9 @@
 [submodule "htb/recond"]
 	path = htb/recond
 	url = https://github.com/InnovAnon-Inc/teamhack_recond.git
+[submodule "htb/import_db"]
+	path = htb/import_db
+	url = https://github.com/InnovAnon-Inc/import_db.git
+[submodule "htb/msfrpcd"]
+	path = htb/msfrpcd
+	url = https://github.com/InnovAnon-Inc/msfrpcd.git
