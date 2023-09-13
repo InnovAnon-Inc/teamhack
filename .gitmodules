@@ -43,3 +43,6 @@
 [submodule "htb/msfrpcd"]
 	path = htb/msfrpcd
 	url = https://github.com/InnovAnon-Inc/msfrpcd.git
+[submodule "htb/nmap"]
+	path = htb/nmap
+	url = https://github.com/InnovAnon-Inc/teamhack_nmap.git
