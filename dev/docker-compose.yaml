@@ -2,7 +2,7 @@ version: '3.8'
 include:
   - acng/docker-compose.yaml
   - dcc/docker-compose.yaml
-  - bash-syslog/docker-compose.yaml
+  #- bash-syslog/docker-compose.yaml
   - redis/docker-compose.yaml
   #- test/docker-compose.yaml
 

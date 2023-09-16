@@ -1,6 +1,6 @@
 version: '3.8'
 include:
-  - db/docker-compose.yaml
+  #- db/docker-compose.yaml
   - dns/docker-compose.yaml
   - msfrpcd/docker-compose.yaml
   - import_db/docker-compose.yaml
