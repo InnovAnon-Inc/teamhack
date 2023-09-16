@@ -1,0 +1,25 @@
+# https://github.com/rapid7/metasploit-framework/issues/17976
+
+development: &pgsql
+  adapter: postgresql
+  database: msf
+  username: msf
+  password: 69novass
+  host: 192.168.1.76
+  port: 5432
+  pool: 5
+  timeout: 5
+
+production:
+  <<: *pgsql
+
+test:
+  adapter: postgresql
+  database: msf_test
+  username: msf
+  password: 69novass
+  host: 192.168.1.76
+  port: 5432
+  pool: 5
+  timeout: 5
+
