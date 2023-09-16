@@ -3,47 +3,47 @@ include:
   - dev/docker-compose.yaml
   - htb/docker-compose.yaml
   - it/docker-compose.yaml
-  - net/docker-compose.yaml
+  #- net/docker-compose.yaml
   #- ops/docker-compose.yaml
 services:
   test:
     image:          ubuntu
     container_name: test
     volumes:
-      - apt-cacher-ng:/mnt/apt-cacher-ng:rw
-      - bash-root:/mnt/bash-root:rw
       #- dcc-afl:/mnt/dcc-afl:rw
       #- dcc-debian:/mnt/dcc:rw
+      #- dns-keys:/mnt/dns-keys:rw
+      #- dns-zones:/mnt/dns-zones:rw
+      #- ovpn1-conf:/mnt/ovpn1-conf:rw
+      #- ovpn2-conf:/mnt/ovpn2-conf:rw
+      #- redis-conf:/mnt/redis-conf:rw
+      #- syslog-client:/mnt/syslog-client:rw
+      #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
+      - apt-cacher-ng:/mnt/apt-cacher-ng:rw
+      - bash-root:/mnt/bash-root:rw
       - ccache-etc:/mnt/ccache-etc:rw
       - ccache-redis:/mnt/ccache-redis:rw
       - dcc-kali:/mnt/dcc-kali:rw
       - dcc-ubuntu:/mnt/dcc-ubuntu:rw
       - dcc-voidlinux:/mnt/dcc-voidlinux:rw
-      #- dns-keys:/mnt/dns-keys:rw
-      #- dns-zones:/mnt/dns-zones:rw
-      #- ovpn1-conf:/mnt/ovpn1-conf:rw
-      #- ovpn2-conf:/mnt/ovpn2-conf:rw
       - import-db:/mnt/import-db:rw
       - msfrpcd:/mnt/msfrpcd:rw
       - pgdata:/mnt/pgdata:rw
       - recond:/mnt/recond:rw
       - redis-certs:/mnt/redis-certs:rw
-      #- redis-conf:/mnt/redis-conf:rw
       - redis-data:/mnt/redis-data:rw
       - ./mnt/test:/mnt/test:rw
       - slapd-certs:/mnt/slapd-certs:rw
       - slapd-root:/mnt/slapd-root:rw
-      #- syslog-client:/mnt/syslog-client:rw
       - syslog-client:/etc/rsyslog.d:ro
       - syslog-client:/mnt/syslog-client:rw
       - syslog-etc:/mnt/syslog-etc:rw
       - syslog-log:/mnt/syslog-log:rw
       - teamhack:/mnt/teamhack:rw
-      - tor-etc:/mnt/tor-etc
-      - vpn-c2-etc:/mnt/vpn-c2-etc:rw
-      - vpn-s-etc:/mnt/vpn-s1-etc:rw
-      - vpn-s-peer1:/mnt/vpn-s1-peer1:rw
-      #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
+      #- tor-etc:/mnt/tor-etc
+      #- vpn-c2-etc:/mnt/vpn-c2-etc:rw
+      #- vpn-s-etc:/mnt/vpn-s1-etc:rw
+      #- vpn-s-peer1:/mnt/vpn-s1-peer1:rw
     #depends_on:
       #syslog:
       #  condition:   service_healthy
