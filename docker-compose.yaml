@@ -26,6 +26,7 @@ services:
       - import-db:/mnt/import-db:rw
       - msfrpcd:/mnt/msfrpcd:rw
       - pgdata:/mnt/pgdata:rw
+      - recond:/mnt/recond:rw
       - redis-certs:/mnt/redis-certs:rw
       #- redis-conf:/mnt/redis-conf:rw
       - redis-data:/mnt/redis-data:rw
