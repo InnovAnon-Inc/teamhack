@@ -1,7 +1,7 @@
 version: '3.8'
 include:
   - dev/docker-compose.yaml
-  - htb/docker-compose.yaml
+  #- htb/docker-compose.yaml
   - it/docker-compose.yaml
   #- net/docker-compose.yaml
   #- ops/docker-compose.yaml
@@ -26,8 +26,8 @@ services:
       - dcc-kali:/mnt/dcc-kali:rw
       - dcc-ubuntu:/mnt/dcc-ubuntu:rw
       - dcc-voidlinux:/mnt/dcc-voidlinux:rw
-      - import-db:/mnt/import-db:rw
-      - msfrpcd:/mnt/msfrpcd:rw
+      #- import-db:/mnt/import-db:rw
+      #- msfrpcd:/mnt/msfrpcd:rw
       - pgdata:/mnt/pgdata:rw
       #- recond:/mnt/recond:rw
       - redis-certs:/mnt/redis-certs:rw
@@ -39,7 +39,7 @@ services:
       - syslog-client:/mnt/syslog-client:rw
       - syslog-etc:/mnt/syslog-etc:rw
       - syslog-log:/mnt/syslog-log:rw
-      - teamhack:/mnt/teamhack:rw
+      #- teamhack:/mnt/teamhack:rw
       #- tor-etc:/mnt/tor-etc
       #- vpn-c2-etc:/mnt/vpn-c2-etc:rw
       #- vpn-s-etc:/mnt/vpn-s1-etc:rw

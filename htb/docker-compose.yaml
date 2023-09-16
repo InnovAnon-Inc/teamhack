@@ -1,13 +1,35 @@
 version: '3.8'
 include:
-  #- db/docker-compose.yaml
+  - db/docker-compose.yaml
   - dns/docker-compose.yaml
   - msfrpcd/docker-compose.yaml
   - import_db/docker-compose.yaml
   - nmap/docker-compose.yaml
-  #- recond/docker-compose.yaml
+  - recond/docker-compose.yaml
   - rest/docker-compose.yaml
 
 volumes:
   teamhack:
+
+networks:
+  network:
+    driver:        bridge
+    ipam:
+      config:
+        - subnet:  10.5.0.0/16
+          gateway: 10.5.0.1
+
+services:
+  test:
+    image:          ubuntu
+    container_name: test
+    volumes:
+      - import-db:/mnt/import-db:rw
+      - msfrpcd:/mnt/msfrpcd:rw
+      - recond:/mnt/recond:rw
+      - ./mnt/test:/mnt/test:rw
+      - teamhack:/mnt/teamhack:rw
+    #depends_on:
+      #syslog:
+      #  condition:   service_healthy
 
