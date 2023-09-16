@@ -20,7 +20,7 @@ services:
       #- syslog-client:/mnt/syslog-client:rw
       #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
       - apt-cacher-ng:/mnt/apt-cacher-ng:rw
-      - bash-root:/mnt/bash-root:rw
+      #- bash-root:/mnt/bash-root:rw
       - ccache-etc:/mnt/ccache-etc:rw
       - ccache-redis:/mnt/ccache-redis:rw
       - dcc-kali:/mnt/dcc-kali:rw
