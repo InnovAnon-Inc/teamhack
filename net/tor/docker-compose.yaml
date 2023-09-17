@@ -4,7 +4,7 @@ services:
     image: osminogin/tor-simple
     container_name:  tor
     volumes:
-      - syslog-client:/etc/rsyslog.d:ro
+      #- syslog-client:/etc/rsyslog.d:ro
       - tor-etc:/etc/tor:ro
     restart:         always
     network_mode:    service:vpn-c1

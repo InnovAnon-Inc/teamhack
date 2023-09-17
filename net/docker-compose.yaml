@@ -5,3 +5,17 @@ include:
   - vpn-c2/docker-compose.yaml
   - vpn-s/docker-compose.yaml
 
+services:
+  net-test:
+    image:          ubuntu
+    container_name: net-test
+    volumes:
+      - ./mnt/test:/mnt/test:rw
+      - tor-etc:/mnt/tor-etc
+      - vpn-c2-etc:/mnt/vpn-c2-etc:rw
+      - vpn-s-etc:/mnt/vpn-s1-etc:rw
+      - vpn-s-peer1:/mnt/vpn-s1-peer1:rw
+    #depends_on:
+      #syslog:
+      #  condition:   service_healthy
+

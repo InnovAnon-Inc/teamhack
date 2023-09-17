@@ -12,8 +12,8 @@ services:
       #- "0.0.0.0:9051:9051"
       # TODO
       #- "0.0.0.0:51820:51820/udp"
-    volumes:
-      - syslog-client:/etc/rsyslog.d:ro
+    #volumes:
+    #  - syslog-client:/etc/rsyslog.d:ro
     restart:         always
     cap_add:
       - NET_ADMIN
