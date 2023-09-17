@@ -10,17 +10,18 @@ services:
       - "0.0.0.0:51820:51820/udp"
     volumes:
       #- syslog-client:/etc/rsyslog.d:ro
-      - vpn-c2-etc:/gluetun/custom.conf.d/:ro
+      - vpn-c2-etc:/gluetun/custom.conf.d:ro
     restart:         always
     cap_add:
       - NET_ADMIN
     devices:
       - "/dev/net/tun:/dev/net/tun"
-    depends_on:
+    #depends_on:
       #syslog:
       #  condition:   service_started
-      tor:
-        condition:   service_healthy
+      # TODO
+      #tor:
+      #  condition:   service_healthy
 
 volumes:
   vpn-c2-etc:

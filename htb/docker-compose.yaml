@@ -11,13 +11,13 @@ include:
 volumes:
   teamhack:
 
-networks:
-  network:
-    driver:        bridge
-    ipam:
-      config:
-        - subnet:  10.5.0.0/16
-          gateway: 10.5.0.1
+#networks:
+#  network:
+#    driver:        bridge
+#    ipam:
+#      config:
+#        - subnet:  10.5.0.0/16
+#          gateway: 10.5.0.1
 
 services:
   htb-test:
@@ -29,6 +29,8 @@ services:
       - recond:/mnt/recond:rw
       - ./mnt/test:/mnt/test:rw
       - teamhack:/mnt/teamhack:rw
+    stdin_open: true
+    tty:        true
     #depends_on:
       #syslog:
       #  condition:   service_healthy
