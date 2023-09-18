@@ -4,9 +4,10 @@ services:
     image: sameersbn/apt-cacher-ng
     container_name:  apt-cacher-ng
     ports:
-      - "0.0.0.0:3142:3142"
+      - "0.0.0.0:3142:3142/tcp"
     volumes:
-      - apt-cacher-ng:/var/cache/apt-cacher-ng
+      #- apt-cacher-ng:/var/cache/apt-cacher-ng
+      - acng:/var/cache/apt-cacher-ng
       - syslog-client:/etc/rsyslog.d:ro
     restart:         always
     #network_mode:    service:vpn-s1
@@ -20,5 +21,9 @@ services:
         condition:   service_started
 
 volumes:
-  apt-cacher-ng:
+  #apt-cacher-ng:
+  acng:
+    external: true
+  #syslog-client:
+  #  external: true
 

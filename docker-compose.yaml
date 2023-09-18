@@ -1,9 +1,9 @@
 version: '3.8'
 include:
   - dev/docker-compose.yaml
-  #- htb/docker-compose.yaml
+  - htb/docker-compose.yaml
   - it/docker-compose.yaml
-  #- net/docker-compose.yaml
+  - net/docker-compose.yaml
   #- ops/docker-compose.yaml
 services:
   test:
@@ -19,17 +19,17 @@ services:
       #- redis-conf:/mnt/redis-conf:rw
       #- syslog-client:/mnt/syslog-client:rw
       #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
-      - apt-cacher-ng:/mnt/apt-cacher-ng:rw
+      #- apt-cacher-ng:/mnt/apt-cacher-ng:rw
       #- bash-root:/mnt/bash-root:rw
       - ccache-etc:/mnt/ccache-etc:rw
       - ccache-redis:/mnt/ccache-redis:rw
       - dcc-kali:/mnt/dcc-kali:rw
       - dcc-ubuntu:/mnt/dcc-ubuntu:rw
       - dcc-voidlinux:/mnt/dcc-voidlinux:rw
-      #- import-db:/mnt/import-db:rw
-      #- msfrpcd:/mnt/msfrpcd:rw
-      - pgdata:/mnt/pgdata:rw
-      #- recond:/mnt/recond:rw
+      - import-db:/mnt/import-db:rw
+      - msfrpcd:/mnt/msfrpcd:rw
+      #- pgdata:/mnt/pgdata:rw
+      - recond:/mnt/recond:rw
       - redis-certs:/mnt/redis-certs:rw
       - redis-data:/mnt/redis-data:rw
       - ./mnt/test:/mnt/test:rw
@@ -39,9 +39,9 @@ services:
       - syslog-client:/mnt/syslog-client:rw
       - syslog-etc:/mnt/syslog-etc:rw
       - syslog-log:/mnt/syslog-log:rw
-      #- teamhack:/mnt/teamhack:rw
-      #- tor-etc:/mnt/tor-etc
-      #- vpn-c2-etc:/mnt/vpn-c2-etc:rw
+      - teamhack:/mnt/teamhack:rw
+      - tor-etc:/mnt/tor-etc
+      - vpn-c2-etc:/mnt/vpn-c2-etc:rw
       #- vpn-s-etc:/mnt/vpn-s1-etc:rw
       #- vpn-s-peer1:/mnt/vpn-s1-peer1:rw
     stdin_open: true
@@ -122,7 +122,7 @@ services:
   #  image: jedisct1/dnscrypt-server:latest
   #  container_name: dnscrypt
   #  restart: always
-  #  #command: "init -N innovanon.com -E '192.168.1.76:5443'"
+  #  #command: "init -N innovanon.com -E '192.168.1.252:5443'"
   #  command: "start"
   #  ports:
   #      - '5443:5443/udp'
@@ -154,4 +154,20 @@ services:
 #networks:
 #  mynetwork:
 #    external: true
+
+volumes:
+  #redis-certs:
+  #  external: true
+  #redis-data:
+  #  external: true
+  syslog-client:
+    external: true
+  #syslog-etc:
+  #  external: true
+  #syslog-log:
+  #  external: true
+  #slapd-certs:
+  #  external: true
+  #slapd-root:
+  #  external: true
 

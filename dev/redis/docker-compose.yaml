@@ -24,6 +24,10 @@ services:
 
 volumes:
   redis-certs:
+    external: true
   #redis-conf:
   redis-data:
+    external: true
+  #syslog-client:
+  #  external: true
 

@@ -4,6 +4,6 @@ include:
   - pgrsyslog/docker-compose.yaml
   - postgres/docker-compose.yaml
 
-volumes:
-  syslog-client:
+#volumes:
+#  syslog-client:
 

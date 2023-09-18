@@ -10,6 +10,7 @@ include:
 
 volumes:
   teamhack:
+    external: true
 
 #networks:
 #  network:
@@ -19,19 +20,19 @@ volumes:
 #        - subnet:  10.5.0.0/16
 #          gateway: 10.5.0.1
 
-services:
-  htb-test:
-    image:          ubuntu
-    container_name: htb-test
-    volumes:
-      - import-db:/mnt/import-db:rw
-      - msfrpcd:/mnt/msfrpcd:rw
-      - recond:/mnt/recond:rw
-      - ./mnt/test:/mnt/test:rw
-      - teamhack:/mnt/teamhack:rw
-    stdin_open: true
-    tty:        true
-    #depends_on:
-      #syslog:
-      #  condition:   service_healthy
+#services:
+#  htb-test:
+#    image:          ubuntu
+#    container_name: htb-test
+#    volumes:
+#      - import-db:/mnt/import-db:rw
+#      - msfrpcd:/mnt/msfrpcd:rw
+#      - recond:/mnt/recond:rw
+#      - ./mnt/test:/mnt/test:rw
+#      - teamhack:/mnt/teamhack:rw
+#    stdin_open: true
+#    tty:        true
+#    #depends_on:
+#      #syslog:
+#      #  condition:   service_healthy
 

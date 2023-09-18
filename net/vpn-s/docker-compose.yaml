@@ -27,5 +27,7 @@ services:
 
 volumes:
   vpn-s-etc:
+    #external: true
   vpn-s-peer1:
+    #external: true
 

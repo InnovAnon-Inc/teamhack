@@ -8,5 +8,7 @@ include:
 
 volumes:
   ccache-etc:
+    external: true
   ccache-redis:
+    external: true
 

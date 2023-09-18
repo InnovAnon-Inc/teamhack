@@ -25,4 +25,5 @@ services:
 
 volumes:
   vpn-c2-etc:
+    external: true
 
