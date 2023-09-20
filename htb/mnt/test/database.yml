@@ -5,7 +5,7 @@ development: &pgsql
   database: msf
   username: msf
   password: 69novass
-  host: 192.168.1.252
+  host: 192.168.2.252
   port: 5432
   pool: 5
   timeout: 5
@@ -18,7 +18,7 @@ test:
   database: msf_test
   username: msf
   password: 69novass
-  host: 192.168.1.252
+  host: 192.168.2.252
   port: 5432
   pool: 5
   timeout: 5
