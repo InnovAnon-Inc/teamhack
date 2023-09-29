@@ -16,12 +16,12 @@ services:
       - NET_ADMIN
     devices:
       - "/dev/net/tun:/dev/net/tun"
-    #depends_on:
+    depends_on:
       #syslog:
       #  condition:   service_started
       # TODO
-      #tor:
-      #  condition:   service_healthy
+      tor:
+        condition:   service_healthy
 
 volumes:
   vpn-c2-etc:

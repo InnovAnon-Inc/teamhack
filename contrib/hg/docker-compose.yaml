@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  honeygain:
+    env_file: .env
+    image: honeygain/honeygain
+    container_name:  honeygain
+    command: ["-tou-accept", "-email", $EMAIL, "-pass", $PASS, "-device", $DEVICE]
+    restart:         always
+    #network_mode:    service:vpn-s1
+    #depends_on:
+    #  syslog:
+    #    condition: service_started
+        

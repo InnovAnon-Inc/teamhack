@@ -1,10 +1,11 @@
 version: '3.8'
 include:
+  - contrib/docker-compose.yaml
   - dev/docker-compose.yaml
   - htb/docker-compose.yaml
   - it/docker-compose.yaml
   - net/docker-compose.yaml
-  #- ops/docker-compose.yaml
+  - ops/docker-compose.yaml
 services:
   test:
     image:          ubuntu
