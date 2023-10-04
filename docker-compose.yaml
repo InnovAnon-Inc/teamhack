@@ -22,6 +22,10 @@ services:
       #- vpn-s1-mod:/mnt/vpn-s1-mod:rw
       #- apt-cacher-ng:/mnt/apt-cacher-ng:rw
       #- bash-root:/mnt/bash-root:rw
+      - ca-certs:/mnt/ca-certs:rw
+      - ca-crl:/mnt/ca-crl:rw
+      - ca-csr:/mnt/ca-csr:rw
+      - ca-private:/mnt/ca-private:rw
       - ccache-etc:/mnt/ccache-etc:rw
       - ccache-redis:/mnt/ccache-redis:rw
       - dcc-kali:/mnt/dcc-kali:rw
