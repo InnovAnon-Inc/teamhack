@@ -1,5 +1,7 @@
 version: '3.8'
 include:
+  - ca/docker-compose.yaml
+  - ldapadmin/docker-compose.yaml
   - pgldap/docker-compose.yaml
   - pgrsyslog/docker-compose.yaml
   - postgres/docker-compose.yaml

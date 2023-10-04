@@ -46,3 +46,6 @@
 [submodule "htb/nmap"]
 	path = htb/nmap
 	url = https://github.com/InnovAnon-Inc/teamhack_nmap.git
+[submodule "it/ca"]
+	path = it/ca
+	url = https://github.com/InnovAnon-Inc/CA.git

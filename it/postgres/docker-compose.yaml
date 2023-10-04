@@ -8,10 +8,6 @@ services:
     container_name:  postgres
     ports:
       - "0.0.0.0:5432:5432/tcp"
-    #environment:
-    #  - POSTGRES_USER=root
-    #  - POSTGRES_PASSWORD=69novass
-    #  - POSTGRES_DB=ldapsql
     volumes:
       - pgdata:/var/lib/postgresql/data:rw
       - syslog-client:/etc/rsyslog.d:ro

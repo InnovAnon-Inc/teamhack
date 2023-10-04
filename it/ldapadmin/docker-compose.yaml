@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  ldapadmin:
+    image: osixia/phpldapadmin:latest
+    container_name: ldapadmin
+    ports:
+      - "0.0.0.0:6443:443/tcp"
+    volumes:
+      - ./environment:/container/environment/01-custom/:ro
+    #  - syslog-client:/etc/rsyslog.d:ro
+    restart:         always
+    #environment:
+      #- PHPLDAPADMIN_LDAP_HOSTS="#PYTHON2BASH:[{'ldap.innovanon.org': [{'server': [{'tls': False}]},{'login': [{'bind_id': 'cn=admin,dc=innovanon,dc=com'}]}]}]"
+      #- LDAP_BASE_DN="dc=ldap,dc=innovanon,dc=com"
+    #network_mode:    service:vpn-s1
+    #healthcheck:
+    ##  test: ["CMD-SHELL", "exec 3<> /dev/tcp/0.0.0.0/3633 ; cat <&3 ; exec 3<&-"]
+    #  test: ["CMD-SHELL", "nslookup hackthebox.com 0.0.0.0"]
+    #  interval:     10s
+    #  timeout:       3s
+    #  retries:       10
+    #depends_on:
+    #  syslog:
+    #    condition: service_started
+    #    #condition:   service_healthy
+
