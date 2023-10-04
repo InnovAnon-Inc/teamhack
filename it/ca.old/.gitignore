@@ -1,0 +1,13 @@
+./certs/
+./crl/*.crl
+./crl/*.index.txt
+./crl/*.index.txt.attr
+./crl/*.index.txt.attr.old
+./crl/number
+./csr/*.csr
+./csr/*.ini
+./private/*.ini
+./private/*.key
+./private/randfile
+./private/serial
+
