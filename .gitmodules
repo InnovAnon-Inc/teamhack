@@ -49,3 +49,6 @@
 [submodule "it/ca"]
 	path = it/ca
 	url = https://github.com/InnovAnon-Inc/CA.git
+[submodule "contrib/xmrig/xmrig"]
+	path = contrib/xmrig/xmrig
+	url = https://github.com/MoneroOcean/xmrig.git

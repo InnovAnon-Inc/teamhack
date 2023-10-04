@@ -8,3 +8,8 @@ Subprojects are divided by "department:"
 - dev: Software      Engineering
 - htb: Penetration Testing
 
+# Innovations Anonymous
+Free Code for a Free World!
+==========
+![Corporate Logo](https://innovanon-inc.github.io/assets/images/logo.gif)
+
