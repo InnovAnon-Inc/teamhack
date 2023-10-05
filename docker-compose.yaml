@@ -31,6 +31,8 @@ services:
       - dcc-kali:/mnt/dcc-kali:rw
       - dcc-ubuntu:/mnt/dcc-ubuntu:rw
       - dcc-voidlinux:/mnt/dcc-voidlinux:rw
+      - git-keys:/mnt/git-keys:rw
+      - git-repos:/mnt/git-repos:rw
       - import-db:/mnt/import-db:rw
       - msfrpcd:/mnt/msfrpcd:rw
       #- pgdata:/mnt/pgdata:rw

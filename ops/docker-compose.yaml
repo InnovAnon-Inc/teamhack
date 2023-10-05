@@ -1,5 +1,6 @@
 version: '3.8'
-#include:
+include:
+  - git/docker-compose.yaml
 #  - rest/docker-compose.yaml
 
 #volumes:
