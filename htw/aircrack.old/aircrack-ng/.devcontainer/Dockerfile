@@ -1,0 +1,20 @@
+# See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.154.2/containers/cpp/.devcontainer/base.Dockerfile
+
+# [Choice] Debian / Ubuntu version: debian-10, debian-9, ubuntu-20.04, ubuntu-18.04
+ARG VARIANT
+
+FROM mcr.microsoft.com/vscode/devcontainers/cpp:0-${VARIANT}
+
+# hadolint ignore=DL3003,DL3008
+RUN apt-get update \
+ && export DEBIAN_FRONTEND=noninteractive \
+ && apt-get -y install --no-install-recommends \
+      build-essential autoconf automake libtool pkg-config libnl-3-dev libnl-genl-3-dev libssl-dev \
+	  ethtool shtool rfkill zlib1g-dev libpcap-dev libsqlite3-dev libpcre2-dev libhwloc-dev \
+	  libcmocka-dev hostapd wpasupplicant tcpdump screen iw usbutils expect gawk bear \
+	  libtinfo5 \
+	  clangd-14 \
+	  clang-format-14 \
+	  python3-pip \
+ && rm -rf /var/lib/apt/lists/* \
+ && /usr/bin/pip3 install pre-commit

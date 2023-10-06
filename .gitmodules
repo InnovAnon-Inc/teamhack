@@ -58,9 +58,6 @@
 [submodule "contrib/afl/AFLPlusPlus"]
 	path = contrib/afl/AFLPlusPlus
 	url = https://github.com/AFLPlusPlus/AFLPlusPlus.git
-[submodule "htw/aircrack/aircrack-ng"]
-	path = htw/aircrack/aircrack-ng
-	url = https://github.com/aircrack-ng/aircrack-ng.git
 [submodule "htw/capsrv"]
 	path = htw/capsrv
 	url = https://github.com/InnovAnon-Inc/capsrv.git
