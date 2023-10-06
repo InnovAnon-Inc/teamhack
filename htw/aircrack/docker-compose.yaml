@@ -1,0 +1,15 @@
+version: '3.8'
+include:
+  - pg/docker-compose.yaml
+  - pgo/docker-compose.yaml
+
+volumes:
+  aircaps:
+    external: true
+  airpsks:
+    external: true
+  wordlists:
+    external: true
+  #pgo:
+  #  external: true
+
