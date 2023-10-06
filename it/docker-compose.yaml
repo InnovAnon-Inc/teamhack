@@ -5,7 +5,12 @@ include:
   - pgldap/docker-compose.yaml
   - pgrsyslog/docker-compose.yaml
   - postgres/docker-compose.yaml
+  - web/docker-compose.yaml
 
-#volumes:
+volumes:
+  ca-certs:
+    external: true
+  ca-crl:
+    external: true
 #  syslog-client:
 
