@@ -66,19 +66,21 @@ RUN ./configure    \
 RUN make
 RUN make install-strip
 
+RUN command -v aircrack-ng
+RUN ldd $(command -v aircrack-ng)
+
 FROM scratch
-COPY --from=build /usr/bin/aircrack-ng /usr/bin/
+COPY --from=build /usr/local/bin/aircrack-ng /usr/bin/
 COPY --from=build                                  \
-  /lib/x86_64-linux-gnu/libaircrack-osdep-1.7.0.so \
+  /lib/x86_64-linux-gnu/libsqlite3.so.0            \
+  /lib/x86_64-linux-gnu/libhwloc.so.15             \
   /lib/x86_64-linux-gnu/libcrypto.so.3             \
-  /lib/x86_64-linux-gnu/libbsd.so.0                \
   /lib/x86_64-linux-gnu/libstdc++.so.6             \
   /lib/x86_64-linux-gnu/libgcc_s.so.1              \
   /lib/x86_64-linux-gnu/libc.so.6                  \
-  /lib/x86_64-linux-gnu/libnl-3.so.200             \
-  /lib/x86_64-linux-gnu/libnl-genl-3.so.200        \
-  /lib/x86_64-linux-gnu/libmd.so.0A                \
   /lib/x86_64-linux-gnu/libm.so.6                  \
+  /lib/x86_64-linux-gnu/libudev.so.1               \
+  /lib/x86_64-linux-gnu/libcap.so.2                \
   /lib/x86_64-linux-gnu/
 COPY --from=build                                  \
   /lib64/ld-linux-x86-64.so.2                      \

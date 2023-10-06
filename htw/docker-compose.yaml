@@ -1,6 +1,7 @@
 version: '3.8'
 include:
   - aircrack/docker-compose.yaml
+  - capsrv/docker-compose.yaml
 
 #volumes:
 #  aircaps:

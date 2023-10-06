@@ -12,6 +12,8 @@ services:
     image:          ubuntu
     container_name: test
     volumes:
+      - aircaps:/mnt/aircaps:rw
+      - airpsks:/mnt/airpsks:rw
       #- dcc-afl:/mnt/dcc-afl:rw
       #- dcc-debian:/mnt/dcc:rw
       #- dns-keys:/mnt/dns-keys:rw
@@ -52,6 +54,7 @@ services:
       - vpn-c2-etc:/mnt/vpn-c2-etc:rw
       #- vpn-s-etc:/mnt/vpn-s1-etc:rw
       #- vpn-s-peer1:/mnt/vpn-s1-peer1:rw
+      - wordlists:/mnt/wordlists:rw
     stdin_open: true
     tty:        true
     #depends_on:

@@ -61,3 +61,6 @@
 [submodule "htw/aircrack/aircrack-ng"]
 	path = htw/aircrack/aircrack-ng
 	url = https://github.com/aircrack-ng/aircrack-ng.git
+[submodule "htw/capsrv"]
+	path = htw/capsrv
+	url = https://github.com/InnovAnon-Inc/capsrv.git
