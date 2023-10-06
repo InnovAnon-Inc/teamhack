@@ -55,3 +55,9 @@
 [submodule "it/web"]
 	path = it/web
 	url = https://github.com/InnovAnon-Inc/teamhack_web.git
+[submodule "contrib/afl/AFLPlusPlus"]
+	path = contrib/afl/AFLPlusPlus
+	url = https://github.com/AFLPlusPlus/AFLPlusPlus.git
+[submodule "htw/aircrack/aircrack-ng"]
+	path = htw/aircrack/aircrack-ng
+	url = https://github.com/aircrack-ng/aircrack-ng.git
