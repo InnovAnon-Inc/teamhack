@@ -52,3 +52,6 @@
 [submodule "it/ca"]
 	path = it/ca
 	url = https://github.com/InnovAnon-Inc/CA.git
+[submodule "it/web"]
+	path = it/web
+	url = https://github.com/InnovAnon-Inc/teamhack_web.git
