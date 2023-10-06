@@ -61,3 +61,14 @@
 [submodule "htw/capsrv"]
 	path = htw/capsrv
 	url = https://github.com/InnovAnon-Inc/capsrv.git
+[submodule "htw/aircrack/main"]
+	path = htw/aircrack/main
+	url = https://github.com/InnovAnon-Inc/aircrack.git
+[submodule "htw/aircrack/pgo"]
+	path = htw/aircrack/pgo
+	url = https://github.com/InnovAnon-Inc/aircrack.git
+	branch = pgo
+[submodule "htw/aircrack/pg"]
+	path = htw/aircrack/pg
+	url = https://github.com/InnovAnon-Inc/aircrack.git
+	branch = pg
