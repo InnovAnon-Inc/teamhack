@@ -12,15 +12,6 @@ Hack the Box Team Support Services Parent Project
 ![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/teamhack?style=plastic)
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/InnovAnon-Inc/teamhack?color=FF1100&logoColor=FF1133&style=plastic)
 
-![PyPI - Implementation](https://img.shields.io/pypi/implementation/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - Wheel](https://img.shields.io/pypi/wheel/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - Downloads](https://img.shields.io/pypi/dd/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - Format](https://img.shields.io/pypi/format/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - Status](https://img.shields.io/pypi/status/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI - License](https://img.shields.io/pypi/l/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![PyPI](https://img.shields.io/pypi/v/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-
 [![Tip Me via PayPal](https://img.shields.io/badge/paypal-donate-FF1100.svg?logo=paypal&logoColor=FF1133&style=plastic)](https://www.paypal.me/InnovAnon)
 
 Subprojects are divided by "department:"
