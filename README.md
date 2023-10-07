@@ -1,18 +1,12 @@
 # teamhack [![teamhack](https://github.com/InnovAnon-Inc/teamhack/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/teamhack/actions/workflows/pkgrel.yml)
 Hack the Box Team Support Services Parent Project
 ==========
-[![CodeFactor](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack/badge)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
-[![LoC](https://tokei.rs/b1/github/InnovAnon-Inc/teamhack?category=code)](https://github.com/InnovAnon-Inc/teamhack)
-[![LICENSE](https://img.shields.io/badge/license-UNLICENSE-lightgrey.svg)](https://raw.githubusercontent.com/InnovAnon-Inc/teamhack/master/LICENSE)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/InnovAnon)
-
+[![License Summary](https://img.shields.io/github/license/InnovAnon-Inc/teamhack?color=%23FF1100&label=Free%20Code%20for%20a%20Free%20World%21&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://tldrlegal.com/license/unlicense#summary)
+[![Lines of Code](https://tokei.rs/b1/github/InnovAnon-Inc/teamhack?category=code&color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack)
 [![Repo Size](https://img.shields.io/github/repo-size/InnovAnon-Inc/teamhack?color=%23FF1100&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack)
-![Lines of code](https://img.shields.io/tokei/lines/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 
 [![Latest Release](https://img.shields.io/github/commits-since/InnovAnon-Inc/teamhack/latest?color=%23FF1100&include_prereleases&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack/releases/latest)
 ![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/InnovAnon-Inc/teamhack?color=FF1100&logoColor=FF1133&style=plastic)
-[![License Summary](https://img.shields.io/github/license/InnovAnon-Inc/teamhack?color=%23FF1100&label=Free%20Code%20for%20a%20Free%20World%21&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://tldrlegal.com/license/unlicense#summary)
 
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
@@ -26,6 +20,13 @@ Hack the Box Team Support Services Parent Project
 ![Dependent repos (via libraries.io)](https://img.shields.io/librariesio/dependent-repos/pypi/teamhack?color=FF1100&style=plastic)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/teamhack?color=FF1100&style=plastic)
 ![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/teamhack?style=plastic)
+
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/InnovAnon)
+
+![Lines of code](https://img.shields.io/tokei/lines/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
+[![LICENSE](https://img.shields.io/badge/license-UNLICENSE-lightgrey.svg)](https://raw.githubusercontent.com/InnovAnon-Inc/teamhack/master/LICENSE)
+[![CodeFactor](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack/badge)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 
 Subprojects are divided by "department:"
 - contrib: Third Party Software
