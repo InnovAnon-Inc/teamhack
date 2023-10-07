@@ -1,19 +1,33 @@
 FROM alpine as build
+RUN apk update
+RUN apk upgrade
 RUN apk add wget cmake alpine-sdk automake autoconf libtool linux-headers bash
 
-RUN git clone --depth=1 --recursive https://github.com/MoneroOcean/xmrig.git
+COPY   ./xmrig/ /xmrig
 WORKDIR /xmrig/scripts
+
+ARG NPROC
+
+ARG  CFLAGS
+ENV  CFLAGS=" $CFLAGS -fprofile-generate=/var/teamhack/pgo/aircrack-ng.prof -fprofile-abs-path -fuse-linker-plugin -flto -momit-leaf-frame-pointer -Ofast -g0 -fmerge-all-constants -fomit-frame-pointer -ftree-parallelize-loops=$NPROC"
+
+ARG LDFLAGS
+ENV LDFLAGS="$LDFLAGS -fprofile-generate=/var/teamhack/pgo/aircrack-ng.prof -fprofile-abs-path -fuse-linker-plugin -flto -fmerge-all-constants -fomit-frame-pointer -ftree-parallelize-loops=$NPROC -lgcov"
+
 RUN bash -eu build_deps.sh
 
+ARG DONATE_HOST
+ARG DONATE_STRATEGY
+ARG WALLET
 
 WORKDIR /xmrig
-RUN sed -i 's/constexpr const int kMinimumDonateLevel = 1;/constexpr const int kMinimumDonateLevel = 0;/' \
+RUN sed -i 's/--kMinimumDonateLevel = 1;/kMinimumDonateLevel = 0;/' \
   src/donate.h
-RUN sed -i 's/\(  *"url": "\)donate\.v2\.xmrig\.com:3333\(",\)/\1lmaddox.chickenkiller.com:3333\2/' \
+RUN sed -i "s/--donate.v2.xmrig.com:3333/$DONATE_HOST/"             \
   src/core/config/Config_default.h
-RUN sed -i 's/\(static const char \*kDonateHost = "\)xmrig\.moneroocean\.stream\(";\)/\1gulf.moneroocean.stream\2/' \
+RUN sed -i "s/--xmrig.moneroocean.stream/$DONATE_STRATEGY/"         \
   src/net/strategies/DonateStrategy.cpp
-RUN sed -i 's/\(static char donate_user\[\] = "\)89TxfrUmqJJcb1V124WsUzA78Xa3UYHt7Bg8RGMhXVeZYPN8cE5CZEk58Y1m23ZMLHN7wYeJ9da5n5MXharEjrm41hSnWHL\(";\)/\147JVSZQBS9UEstszaBbgMBUKFhiU2EoBW4gF3JWJ6BohjLh5C7aw1wmSFBhpNsAyBoUEPZsccnoUzHbr1fg8YECdE2UHdWW\2/' \
+RUN sed -i "s/--89TxfrUmqJJcb1V124WsUzA78Xa3UYHt7Bg8RGMhXVeZYPN8cE5CZEk58Y1m23ZMLHN7wYeJ9da5n5MXharEjrm41hSnWHL/$WALLET/" \
   src/net/strategies/DonateStrategy.cpp
 COPY ./Config_default.h \
   src/core/config/Config_default.h
@@ -35,5 +49,7 @@ RUN VERBOSE=defined cmake --build build
 
 FROM scratch
 COPY --from=build /xmrig/build/xmrig /
+WORKDIR  /var/teamhack
+VOLUME ["/var/teamhack/pgo"]
 ENTRYPOINT ["/xmrig"]
 

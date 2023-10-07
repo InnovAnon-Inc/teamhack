@@ -8,9 +8,9 @@ on:
     - cron: '* * * * */1'
   #[workflow_call]
   push:
-    branches: [ "main" ]
+    branches: [ "pgo" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "pgo" ]
 
 jobs:
   build:
@@ -48,20 +48,20 @@ jobs:
     - name: Build Docker Image
       working-directory: "repo"
       run: |
-        docker build -t "innovanon/xmrig:$TEAMHACK_VERSION" .
+        docker build -t "innovanon/xmrig-pgo:$TEAMHACK_VERSION" .
       env:
         TEAMHACK_VERSION: ${{ steps.tag_version.outputs.new_tag }}
 
     - name: Tag Docker Image
       run: |
-        docker tag      "innovanon/xmrig:$TEAMHACK_VERSION" \
-                         innovanon/xmrig:latest
+        docker tag      "innovanon/xmrig-pgo:$TEAMHACK_VERSION" \
+                         innovanon/xmrig-pgo:latest
       env:
         TEAMHACK_VERSION: ${{ steps.tag_version.outputs.new_tag }}
 
     - name: Deploy Docker Image
       run: |
-        docker push      innovanon/xmrig
+        docker push      innovanon/xmrig-pgo
 
     # TODO new image
     - name: Configure GPG Key
@@ -83,5 +83,5 @@ jobs:
         fail_on_unmatched_files: true
         generate_release_notes: true
         files: |
-          *
+          repo/*
 
