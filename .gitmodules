@@ -69,3 +69,6 @@
 	path = htw/aircrack/pg
 	url = https://github.com/InnovAnon-Inc/aircrack.git
 	branch = pg
+[submodule "contrib/afl/AFLPlusPlus"]
+	path = contrib/afl/AFLPlusPlus
+	url = https://github.com/AFLPlusPlus/AFLPlusPlus.git
