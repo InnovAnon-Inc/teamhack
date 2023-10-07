@@ -69,3 +69,14 @@
 [submodule "contrib/afl/AFLPlusPlus"]
 	path = contrib/afl/AFLPlusPlus
 	url = https://github.com/AFLPlusPlus/AFLPlusPlus.git
+[submodule "contrib/xmrig/main"]
+	path = contrib/xmrig/main
+	url = https://github.com/InnovAnon-Inc/xmrig.git
+[submodule "contrib/xmrig/pgo"]
+	path = contrib/xmrig/pgo
+	url = https://github.com/InnovAnon-Inc/xmrig.git
+	branch = pgo
+[submodule "contrib/xmrig/pg"]
+	path = contrib/xmrig/pg
+	url = https://github.com/InnovAnon-Inc/xmrig.git
+	branch = pg

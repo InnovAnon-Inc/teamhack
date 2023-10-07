@@ -1,7 +1,9 @@
 version: '3.8'
 include:
-  #- pg/docker-compose.yaml
   - pgo/docker-compose.yaml
+  #- pg/docker-compose.yaml
+  #- pfo/docker-compose.yaml
+  #- pf/docker-compose.yaml
 
 volumes:
   aircaps:
