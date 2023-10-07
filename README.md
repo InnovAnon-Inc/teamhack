@@ -10,10 +10,10 @@ Subprojects are divided by "department:"
   - acng
   - [![bash-syslog](https://github.com/InnovAnon-Inc/bash-syslog/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/bash-syslog/actions/workflows/pkgrel.yml)
   - dcc
-    - [![main](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml)
-    - [![kali](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=kali)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml)
-    - [![ubuntu](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=ubuntu)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml)
-    - [![voidlinux](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=voidlinux)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml)
+    - [![main](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=main)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml?branch=main)
+    - [![kali](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=kali)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml?branch=kali)
+    - [![ubuntu](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=ubuntu)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml?branch=ubuntu)
+    - [![voidlinux](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml/badge.svg?branch=voidlinux)](https://github.com/InnovAnon-Inc/dcc/actions/workflows/pkgrel.yml?branch=voidlinux)
   - redis
 - htb: Penetration Testing
   - [![import_db](https://github.com/InnovAnon-Inc/import_db/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/import_db/actions/workflows/pkgrel.yml)
@@ -25,13 +25,15 @@ Subprojects are divided by "department:"
   - [![teamhack_rest](https://github.com/InnovAnon-Inc/teamhack_rest/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/teamhack_rest/actions/workflows/pkgrel.yml)
 - htw: Penetration Testing but Bigger
   - aircrack
-    - [![main](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml)
-    - [![aircrack-pgo](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pgo)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml)
-    - [![aircrack-pg](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pg)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml)
+    - [![main](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=main)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=main)
+    - [![pgo](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pgo)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pgo)
+    - [![pg](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pg)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pg)
+    - [![pfo](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pfo)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pfo)
+    - [![pf](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pf)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pf)
   - [![CA](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml)
   - [![capsrv](https://github.com/InnovAnon-Inc/capsrv/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/capsrv/actions/workflows/pkgrel.yml)
 - it:  System  Administration
-  - [![ldapadmin](https://github.com/InnovAnon-Inc/ldapadmin/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/pgldap/actions/workflows/pkgrel.yml)
+  - [![ldapadmin](https://github.com/InnovAnon-Inc/ldapadmin/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/ldapadmin/actions/workflows/pkgrel.yml)
   - [![pgrsyslog](https://github.com/InnovAnon-Inc/pgrsyslog/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/pgrsyslog/actions/workflows/pkgrel.yml)
   - [![pgldap](https://github.com/InnovAnon-Inc/pgldap/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/pgldap/actions/workflows/pkgrel.yml)
   - postgres
