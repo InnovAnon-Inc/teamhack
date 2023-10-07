@@ -5,6 +5,7 @@ Hack the Box Team Support Services Parent Project
 [![Latest Release](https://img.shields.io/github/commits-since/InnovAnon-Inc/teamhack/latest?color=%23FF1100&include_prereleases&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack/releases/latest)
 [![Lines of Code](https://tokei.rs/b1/github/InnovAnon-Inc/teamhack?category=code&color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack)
 [![Repo Size](https://img.shields.io/github/repo-size/InnovAnon-Inc/teamhack?color=%23FF1100&logo=InnovAnon%2C%20Inc.&logoColor=%23FF1133&style=plastic)](https://github.com/InnovAnon-Inc/teamhack)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
 
 ![Dependent repos (via libraries.io)](https://img.shields.io/librariesio/dependent-repos/pypi/teamhack?color=FF1100&style=plastic)
 ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/teamhack?color=FF1100&style=plastic)
@@ -21,12 +22,6 @@ Hack the Box Team Support Services Parent Project
 ![PyPI](https://img.shields.io/pypi/v/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 
 [![Tip Me via PayPal](https://img.shields.io/badge/paypal-donate-FF1100.svg?logo=paypal&logoColor=FF1133&style=plastic)](https://www.paypal.me/InnovAnon)
-
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/InnovAnon)
-![Lines of code](https://img.shields.io/tokei/lines/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
-[![LICENSE](https://img.shields.io/badge/license-UNLICENSE-lightgrey.svg)](https://raw.githubusercontent.com/InnovAnon-Inc/teamhack/master/LICENSE)
-[![CodeFactor](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack/badge)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
 
 Subprojects are divided by "department:"
 - contrib: Third Party Software
