@@ -1,6 +1,6 @@
 version: '3.8'
 include:
-  - pg/docker-compose.yaml
+  #- pg/docker-compose.yaml
   - pgo/docker-compose.yaml
 
 volumes:
