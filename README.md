@@ -30,10 +30,10 @@ Subprojects are divided by "department:"
     - pg [![pg](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pg)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pg)
     - pfo [![pfo](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pfo)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pfo)
     - pf [![pf](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml/badge.svg?branch=pf)](https://github.com/InnovAnon-Inc/aircrack/actions/workflows/pkgrel.yml?branch=pf)
-  - ca [![CA](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml)
   - capsrv [![capsrv](https://github.com/InnovAnon-Inc/capsrv/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/capsrv/actions/workflows/pkgrel.yml)
   - TODO cracksrv
 - it:  System  Administration
+  - ca [![CA](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/CA/actions/workflows/pkgrel.yml)
   - ldapadmin
   - pgrsyslog [![pgrsyslog](https://github.com/InnovAnon-Inc/pgrsyslog/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/pgrsyslog/actions/workflows/pkgrel.yml)
   - pgldap [![pgldap](https://github.com/InnovAnon-Inc/pgldap/actions/workflows/pkgrel.yml/badge.svg)](https://github.com/InnovAnon-Inc/pgldap/actions/workflows/pkgrel.yml)
