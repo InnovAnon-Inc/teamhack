@@ -10,7 +10,8 @@ git branch    "$*"
 git checkout  "$*"
 git checkout  main
 git merge     "$*"
-git push origin main
+#git push origin main
+git push
 
 while [[ "$(basename "$(pwd)")" != teamhack ]]
 do cd ..
