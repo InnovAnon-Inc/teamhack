@@ -80,3 +80,6 @@
 	path = contrib/xmrig/pg
 	url = https://github.com/InnovAnon-Inc/xmrig.git
 	branch = pg
+[submodule "rk/slrk"]
+	path = rk/slrk
+	url = https://github.com/InnovAnon-Inc/slrk.git

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sat Oct  7 03:02:24 2023 as: nmap -p80 -oX nmap.xml google.com -->
+<nmaprun scanner="nmap" args="nmap -p80 -oX nmap.xml google.com" start="1696665744" startstr="Sat Oct  7 03:02:24 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="142.250.115.101" addrtype="ipv4"/>
+<hostnames>
+<hostname name="google.com" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1696665745" endtime="1696665745"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="142.250.115.101" addrtype="ipv4"/>
+<hostnames>
+<hostname name="google.com" type="user"/>
+<hostname name="rq-in-f101.1e100.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="44543" rttvar="34570" to="182823"/>
+</host>
+<runstats><finished time="1696665745" timestr="Sat Oct  7 03:02:25 2023" summary="Nmap done at Sat Oct  7 03:02:25 2023; 1 IP address (1 host up) scanned in 1.76 seconds" elapsed="1.76" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
