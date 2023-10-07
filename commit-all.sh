@@ -42,11 +42,14 @@ while IFS= read -r line ; do (
   subm="${cols[0]}"
   brch="${cols[1]}"
 
-  git -C "$subm" pull origin "$brch"
+  git -C "$subm" pull --set-upstream origin "$brch"
   git -C "$subm" add .
   git -C "$subm" commit -m "$M" || :
   git -C "$subm" push --set-upstream origin "HEAD:$brch"
 ) ; done << "EOF"
+contrib/xmrig/main
+contrib/xmrig/pgo pgo
+contrib/xmrig/pg  pg
 dev/bash-syslog
 dev/dcc/kali      kali
 dev/dcc/main
@@ -60,14 +63,15 @@ htb/nmap
 htb/recond
 htb/rest
 htw/aircrack/main
-htw/aircrack/pg   pg
 htw/aircrack/pgo  pgo
+htw/aircrack/pg   pg
 htw/capsrv
 it/ca
 it/pgldap
 it/pgrsyslog
 it/web
 ops/ppa
+rk/slrk
 EOF
 
 git add -A
