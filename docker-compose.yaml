@@ -57,6 +57,7 @@ services:
       - wordlists:/mnt/wordlists:rw
     stdin_open: true
     tty:        true
+    restart:    no
     #depends_on:
       #syslog:
       #  condition:   service_healthy
