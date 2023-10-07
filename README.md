@@ -20,13 +20,13 @@ Hack the Box Team Support Services Parent Project
 ![PyPI - License](https://img.shields.io/pypi/l/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 ![PyPI](https://img.shields.io/pypi/v/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 
-[![Tip Me via PayPal](https://img.shields.io/badge/paypal-donate-FF1100.svg?logo=paypal?logoColor=FF1133)](https://www.paypal.me/InnovAnon)
+[![Tip Me via PayPal](https://img.shields.io/badge/paypal-donate-FF1100.svg?logo=paypal&logoColor=FF1133&style=plastic)](https://www.paypal.me/InnovAnon)
 
 [![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/InnovAnon)
 ![Lines of code](https://img.shields.io/tokei/lines/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
 [![LICENSE](https://img.shields.io/badge/license-UNLICENSE-lightgrey.svg)](https://raw.githubusercontent.com/InnovAnon-Inc/teamhack/master/LICENSE)
 [![CodeFactor](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack/badge)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/InnovAnon-Inc/teamhack?color=FF1100&logo=InnovAnon-Inc&logoColor=FF1133&style=plastic)](https://www.codefactor.io/repository/github/InnovAnon-Inc/teamhack)
 
 Subprojects are divided by "department:"
 - contrib: Third Party Software
